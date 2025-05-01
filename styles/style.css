@@ -3,13 +3,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 /* shared styles */
 
-.text-light-gray{
+.text-light-gray {
     color: #727272;
 }
-*{
+
+* {
     font-family: "Work Sans", sans-serif;
 }
-.btn-primary{
+
+.btn-primary {
     border-radius: 8px;
     color: #fff;
     font-size: 1.25rem;
@@ -28,38 +30,42 @@
 }
 
 /* header styles */
-header{
+header {
     background: rgba(255, 144, 14, 0.10);
     padding: 50px 240px;
 }
-nav{
+
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 
-nav > ul {
+nav>ul {
     display: flex;
 }
-nav  li {
+
+nav li {
     list-style: none;
     margin-right: 30px;
     font-weight: 500;
     font-size: 1rem;
 }
+
 nav li a {
     text-decoration: none;
     color: #131313;
 }
 
 /* banner style */
-.banner-content{
+.banner-content {
     max-width: 800px;
     text-align: center;
     margin: 0 auto;
 }
-.banner-title{
+
+.banner-title {
     font-size: 4rem;
     font-weight: 700;
     color: #131313;
@@ -69,6 +75,7 @@ nav li a {
     margin-top: 20px;
     width: 100%;
 }
+
 /* main styles */
 main {
     max-width: 1440px;
@@ -81,48 +88,85 @@ main {
     align-items: center;
 }
 
-.teams-img-container{
+.teams-img-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
 }
 
-.teams-content{
+.teams-content {
     padding-left: 70px;
     padding-right: 70px;
 }
-.teams-title{
+
+.teams-title {
     font-size: 2.8rem;
 }
-.Quick-list{
+
+.Quick-list {
     font-weight: 500;
     color: #727272;
 }
-.of-Our{
+
+.of-Our {
     font-weight: 700;
     color: #131313;
 }
-.Features{
+
+.Features {
     font-weight: 700;
     color: #FF900E;
 }
 
+/* featire section */
+.features {
+    margin-top: 130px;
+    display: flex;
+}
+
+.features .section-title{
+     border-left: 5px solid #FF900E;
+     padding-left: 20px;
+}
+
+.feature-content .card {
+    padding: 30px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+}
+
+.ten-years-badge {
+    border-radius: 8px;
+    background: #FF900E;
+    color: #FFF;
+    width: 300px;
+    padding: 40px;
+}
+.ten-years-badge h2{
+    font-size: 4rem;
+}
+
 /* facts section  */
-.facts-card-container{
+.facts-card-container {
     display: flex;
     justify-content: space-around;
 }
+
 .facts-card-container .card {
     border-radius: 8px;
     border: 1px solid #FF900E;
     text-align: center;
     padding: 30px;
 }
-.facts-card-container .card-title{
+
+.facts-card-container .card-title {
     font-weight: 600;
     font-size: 1.25rem;
     margin-top: 5px;
 }
+
 .facts-card-container .card-stats {
     font-size: 2.8rem;
     color: #424242;
@@ -131,16 +175,18 @@ main {
 }
 
 /* sponsors section */
-.sponsors{
+.sponsors {
     text-align: center;
 }
-.sponsors-container{
+
+.sponsors-container {
     margin-top: 50px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    gap: 40px;   
+    gap: 40px;
 }
+
 .sponsors-container img {
     width: 165px;
 }
@@ -149,36 +195,41 @@ main {
 /* responsive media queries */
 /* mobile devices */
 @media screen and (max-width:576px) {
-    header{
+    header {
         padding: 20px;
     }
-    nav, .teams-container,
+
+    nav,
+    .teams-container,
     .facts-card-container,
-    .sponsors-container
-     {
+    .sponsors-container {
         flex-direction: column;
     }
-    .teams-img-container{
+
+    .teams-img-container {
         grid-template-columns: 1fr;
     }
-    .teams-content,.facts-card-container{
+
+    .teams-content,
+    .facts-card-container {
         padding-left: 20px;
         padding-right: 20px;
     }
-    .facts-card-container{
+
+    .facts-card-container {
         gap: 20px;
     }
 }
 
 /* tablet or medium devices */
 @media screen and (min-width: 576px) and (max-width: 960px) {
-    header{
+    header {
         padding: 50px;
     }
-    nav, 
+
+    nav,
     .teams-container,
-    .sponsors-container
-    {
+    .sponsors-container {
         flex-direction: column;
     }
 }
